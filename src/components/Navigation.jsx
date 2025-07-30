@@ -7,7 +7,7 @@ const navLinks = [
   { id: 3, to: "/contact", label: "Contact" },
 ];
 
-function Navigation() {
+function Navigation({ closeMenu }) {
   return (
     <>
       {navLinks.map((elem) => {
@@ -15,6 +15,7 @@ function Navigation() {
           <Link
             key={elem.id}
             to={elem.to}
+            onClick={closeMenu}
             className="group transition duration-300 hover:text-white"
           >
             {elem.label} {/* Render link label */}

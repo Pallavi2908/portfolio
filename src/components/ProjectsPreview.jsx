@@ -3,7 +3,7 @@ import { projects } from "../data/projects"; // if stored in a separate file
 
 function Projects() {
   return (
-    <div className="flex flex-col gap-12 py-16">
+    <div className="flex flex-col   gap-12 py-16">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}

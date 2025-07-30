@@ -103,26 +103,26 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           {projectSlides.map((slide) => (
             <div className="embla__slide h-[350px]" key={slide.id}>
-              <div className="relative block group overflow-hidden rounded-3xl border-1 border-white">
+              <div className="relative block group overflow-hidden rounded-4xl border-1 bg-red-400 border-white">
                 <Link to={`/`}>
                   <img
-                    className="embla__slide__img object-cover w-full h-full"
+                    className="embla__slide__img object-cover w-full h-full rounded-3xl"
                     src={slide.image}
                     alt={slide.title}
                   />
                 </Link>
 
                 {/* Bottom-half translucent overlay */}
-                <div className="absolute bottom-0 right-0 w-2/3 h-full bg-primary/80 flex flex-col justify-evenly p-4 transition-opacity duration-300 group-hover:bg-opacity-80">
-                  <h3 className="text-body font-heading text-2xl tracking-widest font-bold">
+                <div className="absolute bottom-0 right-0 md:w-2/3 h-2/3 md:h-full bg-primary/80 flex flex-col justify-evenly p-4 transition-opacity duration-300 group-hover:bg-opacity-80">
+                  <h3 className="text-body md:px-1 px-6 font-heading text-sm md:text-2xl tracking-widest font-bold">
                     {slide.title}
                   </h3>
-                  <p className="text-white tracking-wide font-body text-sm">
+                  <p className="text-white tracking-wide font-body px-6 pb-1 md:px-2 md:text-sm text-[12px]">
                     {slide.description}
                   </p>
 
                   {/* Buttons NOT inside <Link> */}
-                  <div className="flex gap-4">
+                  <div className="flex md:gap-4 justify-evenly md:items-center md:px-0 ">
                     {slide.github && (
                       <a
                         href={slide.github}
@@ -130,9 +130,13 @@ const EmblaCarousel = (props) => {
                         rel="noopener noreferrer transition duration-300 hover:brightness-125 hover:drop-shadow-glow cursor-pointer"
                       >
                         <SocialBtn
-                          label="GitHub Repo"
+                          label={
+                            <span className="hidden md:inline">
+                              GitHub Repo
+                            </span>
+                          }
                           icon={FiGithub}
-                          className="w-max underline"
+                          className="  w-max underline"
                         />
                       </a>
                     )}
@@ -143,7 +147,9 @@ const EmblaCarousel = (props) => {
                         rel="noopener noreferrer transition duration-300 hover:brightness-125 hover:drop-shadow-glow cursor-pointer"
                       >
                         <SocialBtn
-                          label="Live Site"
+                          label={
+                            <span className="hidden md:inline">Live Site</span>
+                          }
                           icon={FiGlobe}
                           className="w-max underline"
                         />

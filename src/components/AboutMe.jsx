@@ -1,4 +1,5 @@
-import img1 from "../assets/6.png";
+// import img1 from "../assets/6.png";
+import img1 from "../assets/7.jpg";
 // import img from "../assets/pfp.jpg";
 
 const AboutMe = () => {
@@ -6,25 +7,28 @@ const AboutMe = () => {
     <>
       <div>
         {/* about me upper lines */}
-        <div className=" flex justify-around px-6 py-4">
-          <div className=" pl-24 flex-1/2 pt-4">
-            <h2 className="  font-heading tracking-widest text-body font-semibold">
+        <div className=" flex md:flex-row flex-col md:gap-2 gap:3 justify-around px-6 py-4 ">
+          <div className="flex-1/2 md:pt-4">
+            <h2 className=" md:text-center text-left font-heading tracking-widest text-body font-semibold">
               .../About me...
             </h2>
           </div>
-          <div className=" flex-1/2">
-            <p className="font-heading text-gray-400 md tracking-wide text-lg font-medium">
-              Hello! I am Pallavi, a recent engineering graduate <br />
-              passionate about all things tech, especially{" "}
-              <em className="text-body">web development</em>
+          <div className="md:pt-0 pt-4 flex-1/2">
+            <p className="font-heading text-gray-400 md tracking-wide md:text-lg text-sm font-medium">
+              Hello! I am Pallavi Sinha, a recent engineering graduate in ECE
+              with a minor in ML and a CGPA of 8.64 <br />
+              passionate about all things tech, especially<br></br>{" "}
+              <em className="text-body">
+                web development & Artificial Intelligence
+              </em>
             </p>
           </div>
         </div>
 
         {/* skill section */}
-        <div className="flex justify-around px-6 py-8 gap-6">
+        <div className="flex md:flex-row flex-col-reverse justify-around px-6 py-8 gap-6 ">
           {/* Left Column */}
-          <div className=" flex flex-col gap-8 w-full max-w-[700px] p-6">
+          <div className=" flex flex-col gap-8 w-full max-w-[700px] p-6 ">
             {/* Front-end */}
             <div className="bg-body font-heading text-tertiary rounded-3xl  p-6">
               <h1 className="text-lg">Front-end</h1>
@@ -55,7 +59,7 @@ const AboutMe = () => {
               </div>
             </div>
 
-            <div className="font-heading flex gap-4 justify-between">
+            <div className="font-heading flex gap-4 flex-col md:flex-row justify-between">
               {/* Back-end */}
               <div className=" dark-cards">
                 <p className=" italic text-sm  tracking-wide ">
@@ -74,12 +78,20 @@ const AboutMe = () => {
           </div>
 
           {/* Right Column - Image */}
-          <div className="border-2 border-secondary rounded-3xl h-[500px] w-[300px]">
-            <img
-              src={img1}
-              alt="About me"
-              className="w-full h-full object-cover rounded-3xl"
-            />
+          {/* Parent container */}
+          <div className="flex justify-center md:block">
+            <div
+              className="
+      border-2 border-secondary rounded-3xl
+      h-[400px] w-[200px] md:h-[500px] md:w-[300px]
+    "
+            >
+              <img
+                src={img1}
+                alt="About me"
+                className="w-full h-full object-cover rounded-3xl"
+              />
+            </div>
           </div>
         </div>
       </div>

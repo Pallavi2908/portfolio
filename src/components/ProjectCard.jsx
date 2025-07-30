@@ -10,14 +10,14 @@ const ProjectCard = ({
   videoEmbedUrl,
 }) => {
   return (
-    <div className="text-body px-10 flex w-full py-8">
+    <div className="text-body px-10 flex  md:flex-row flex-col-reverse gap-4 mx-auto w-full py-8 ">
       {/* Left Section - 40% */}
-      <div className="w-[40%] flex flex-col gap-6 p-4">
-        <h1 className="font-heading tracking-widest text-xl font-semibold pl-4">
+      <div className="md:w-[40%] w-full flex flex-col gap-6 p-4 ">
+        <h1 className="font-heading tracking-widest md:text-xl text-lg font-semibold pl-4">
           # {title}
         </h1>
 
-        <div className="flex flex-row flex-wrap gap-2 p-4 font-heading">
+        <div className="flex flex-row flex-wrap  md:text-base text-sm  p-2 gap-2 md:p-4 font-heading">
           {techStack.map((tech) => (
             <div
               key={tech}
@@ -28,11 +28,11 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <p className="font-body tracking-wide whitespace-pre-line">
+        <p className="font-body text-center md:text-left md:text-base text-sm tracking-wide whitespace-pre-line">
           {description}
         </p>
 
-        <div className="flex items-center gap-2">
+        <div className="flex  justify-center gap-2">
           <a
             href={githubLink}
             target="_blank"
@@ -55,7 +55,7 @@ const ProjectCard = ({
       </div>
 
       {/* Right Section - 60% */}
-      <div className="w-[60%] aspect-video pl-4">
+      <div className="md:w-[60%] w-max aspect-video pl-4">
         <iframe
           className="w-full h-full rounded-lg"
           src={videoEmbedUrl}

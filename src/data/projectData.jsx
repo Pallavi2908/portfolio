@@ -47,3 +47,4 @@ const projectSlides = [
 ];
 
 export default projectSlides;
+//  resume and past experie

@@ -3,7 +3,7 @@ import SocialBtn from "../components/SocialBtn";
 
 function SocialLinks() {
   return (
-    <div className="flex max-w-screen justify-center gap-6 pt-12">
+    <div className="flex md:flex-row flex-wrap max-w-screen justify-center gap-6 pt-12">
       {socials.map(({ label, icon, link }) => (
         <a key={label} href={link} target="_blank" rel="noopener noreferrer">
           <SocialBtn label={label} icon={icon} />
