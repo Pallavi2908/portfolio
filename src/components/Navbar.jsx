@@ -15,7 +15,7 @@ const Navbar = () => {
     <>
       {/* Overlay menu for mobile */}
       {openMenu && (
-        <div className="fixed inset-0 font-heading tracking-wide bg-black/80 bg-opacity-90 z-50 flex flex-col justify-center items-center gap-6 text-white text-2xl">
+        <div className="fixed inset-0 font-navbar tracking-wide bg-black/80 bg-opacity-90 z-50 flex flex-col justify-center items-center gap-6 text-white text-2xl">
           <Navigation closeMenu={handleLinkClick} />
 
           <a
@@ -30,16 +30,16 @@ const Navbar = () => {
       )}
 
       {/* Navbar */}
-      <nav className="flex sticky bg-primary shadow-sm shadow-red-100/10 top-0 z-40 text-secondary justify-between px-4 py-3 md:px-6 md:py-4 lg:px-8 lg:py-6 items-center ">
+      <nav className="flex sticky bg-primary shadow-sm shadow-red-100/10 top-0 z-40 text-secondary justify-between px-4 py-1 md:px-6 md:py-1 lg:px-8 lg:py-3 items-center ">
         <div className="text-body text-left">
-          <img src={img} className="w-[120px] h-[100px]" />
+          <img src={img} className="w-[60px] h-[60px]" />
         </div>
 
-        <div className="hidden md:flex gap-10 items-center text-xl font-body text-textColor">
+        <div className="hidden md:flex gap-10 items-center text-lg font-navbar text-textColor">
           <Navigation />
         </div>
 
-        <div className="hidden md:block font-medium italic font-body">
+        <div className="hidden md:block font-medium italic font-navbar">
           <a
             href="https://www.behance.net/taisia_pro"
             target="_blank"

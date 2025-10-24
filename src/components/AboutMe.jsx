@@ -31,11 +31,11 @@ const AboutMe = () => {
           <div className=" flex flex-col gap-8 w-full max-w-[700px] p-6 ">
             {/* Front-end */}
             <div className="bg-body font-heading text-tertiary rounded-3xl  p-6">
-              <h1 className="text-lg">Front-end</h1>
+              <h1 className="text-lg">Back-end</h1>
               <h3 className="font-mono font-bold tracking-wide text-sm mt-2">
                 <br></br>
-                HTML / CSS / TailwindCSS / React.js / JavaScript / TypeScript /
-                Figma
+                Node.js / Express / Redis / MongoDB / Mongoose/ MySQL / Docker /
+                Cloudinary / JWT / GCP
               </h3>
             </div>
 
@@ -47,7 +47,7 @@ const AboutMe = () => {
                 </h1>
                 <br></br>
                 <h3 className="font-mono font-bold tracking-wide text-sm">
-                  C / C++ / Python / JavaScript
+                  C / C++ / JavaScript
                 </h3>
               </div>
               <div className="border-secondary border-1  dark-cards">
@@ -67,11 +67,10 @@ const AboutMe = () => {
                 </p>
               </div>
               <div className="bg-body text-tertiary rounded-3xl text-secondaryz p-6">
-                <h1 className="text-lg">Back-end & DevOps</h1>
+                <h1 className="text-lg">Front-end </h1>
                 <h3 className="font-mono font-bold tracking-wide text-sm mt-2">
                   <br></br>
-                  Node.js / FastAPI / REST API / MySQL / MongoDB / Mongoose /
-                  Docker
+                  HTML / CSS / TailwindCSS / React.js / Figma
                 </h3>
               </div>
             </div>

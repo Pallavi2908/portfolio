@@ -2,10 +2,37 @@
 
 export const projects = [
   {
+    title: "BlogApp",
+    techStack: [
+      "NodeJS",
+      "Redis",
+      "Cloudinary",
+      "EJS",
+      "Express",
+      "JWT",
+      "MongoDB Atlas",
+    ],
+    description: (
+      <>
+        Full-stack blogging platform built with{" "}
+        <b>Node.js, Express, and MongoDB</b>, featuring secure JWT
+        authentication and bcrypt encryption. Integrated <b>Cloudinary</b> for
+        scalable cloud image storage and Redis caching to reduce response times
+        by 84%.<br></br>
+        <br></br>
+        Deployed on Render serving <b>20+</b> active users with RESTful API
+        architecture.
+      </>
+    ),
+    githubLink: "https://github.com/Pallavi2908/BlogApp",
+    liveLink: "https://blogapp-lngd.onrender.com/users/create",
+    videoEmbedUrl: "https://www.youtube.com/embed/Bada0W5NkbY",
+  },
+  {
     title: "Semantra",
     techStack: [
       "Python",
-      "FastAPI",
+
       "LangChain",
       "SPECTER2",
       "Mistral 7B",
