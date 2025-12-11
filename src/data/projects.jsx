@@ -2,6 +2,31 @@
 
 export const projects = [
   {
+    title: "Nexus - (Under development 🚧)",
+    techStack: [
+      "NodeJS",
+      "Redis",
+      "BullMQ",
+      "Docker",
+      "Cloudinary",
+      "MySQL",
+      "Express",
+      "SSE",
+    ],
+    description: (
+      <>
+        Nexus is a <b> Node.js</b> based robust image compression pipeline
+        designed with scalability and fault-tolerance in mind.
+        <br></br>It simulates the ingestion-heavy systems used in modern content
+        platforms; using <b>BullMQ</b> to handle the heavy job of image
+        compression in the background and <b>MySQL</b> for job persistence.
+      </>
+    ),
+    githubLink: "https://github.com/Pallavi2908/Nexus",
+    liveLink: "https://github.com/Pallavi2908/Nexus",
+    videoEmbedUrl: "",
+  },
+  {
     title: "BlogApp",
     techStack: [
       "NodeJS",

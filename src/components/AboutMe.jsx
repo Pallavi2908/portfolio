@@ -35,7 +35,7 @@ const AboutMe = () => {
               <h3 className="font-mono font-bold tracking-wide text-sm mt-2">
                 <br></br>
                 Node.js / Express / Redis / MongoDB / Mongoose/ MySQL / Docker /
-                Cloudinary / JWT / GCP
+                Cloudinary / JWT / BullMQ
               </h3>
             </div>
 
@@ -54,7 +54,7 @@ const AboutMe = () => {
                 <h1 className="text-base font-heading mb-1">AI/ML</h1>
                 <h3 className="font-mono font-bold tracking-wide text-sm">
                   <br></br>
-                  LangChain / Mistral7B LLM / Qdrant, ChromaDB / SPECTER2
+                  LangChain / Mistral7B LLM / Qdrant / SPECTER2
                 </h3>
               </div>
             </div>
@@ -70,7 +70,7 @@ const AboutMe = () => {
                 <h1 className="text-lg">Front-end </h1>
                 <h3 className="font-mono font-bold tracking-wide text-sm mt-2">
                   <br></br>
-                  HTML / CSS / TailwindCSS / React.js / Figma
+                  HTML / CSS / TailwindCSS / React.js / Figma / EJS
                 </h3>
               </div>
             </div>

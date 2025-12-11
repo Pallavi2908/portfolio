@@ -63,7 +63,7 @@ const Contact = () => {
             id="message"
             name="message"
             rows="4"
-            placeholder="Write your message here..."
+            placeholder="Write your message here... (temporarily unavailable)"
             required
             className="w-full px-4 py-2 border rounded-md border-white "
           ></textarea>
