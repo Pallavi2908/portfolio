@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import SocialLinks from "../components/SocialLinks";
 import AboutMe from "../components/AboutMe";
+import WorkExp from "../components/WorkExp";
 import ProjectsPrev from "../components/ProjectsPreview";
 import EmblaCarousel from "../components/Carousel";
 import { useRef } from "react";
@@ -49,12 +50,13 @@ function Home() {
         </div>
 
         {/* Info text - only shown on md and up */}
-        <div className="hidden md:flex flex-col items-start justify-center pl-6 pt-6 md:pt-22 font-medium italic font-body">
+        <div className="hidden md:flex flex-col items-start justify-center pl-6 pt-6 pb-24 md:pt-22 font-medium italic font-body">
           <Button
             label="Projects"
             onClick={scrollToProjects}
             className="w-52 mb-6"
           />
+
           {/* Other text content */}
           <h1 className="text-[108px] font-bold">Developer.</h1>
         </div>
@@ -70,9 +72,13 @@ function Home() {
         <AboutMe />
       </div>
 
+      <div className="text-white pt-12">
+        <WorkExp />
+      </div>
+
       {/* Projects Preview */}
-      <div ref={projectsRef} className="pt-6 ">
-        <h2 className="text-center pb-6 font-heading tracking-widest text-body font-semibold">
+      <div ref={projectsRef} className="pt-20 ">
+        <h2 className="text-center font-heading tracking-widest text-body text-2xl font-semibold">
           .../Projects...
         </h2>
         <ProjectsPrev />

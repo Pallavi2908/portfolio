@@ -15,12 +15,9 @@ const AboutMe = () => {
           </div>
           <div className="md:pt-0 pt-4 flex-1/2">
             <p className="font-heading text-gray-400 md tracking-wide md:text-lg text-sm font-medium">
-              Hello! I am Pallavi Sinha, a recent engineering graduate in ECE
-              with a minor in ML and a CGPA of 8.64 <br />
-              passionate about all things tech, especially<br></br>{" "}
-              <em className="text-body">
-                web development & Artificial Intelligence
-              </em>
+              Hello! I am Pallavi Sinha, a full-stack developer. <br />
+              Currently a Software Trainee{" "}
+              <em className="text-body">at GarudaUAV</em>
             </p>
           </div>
         </div>
@@ -54,7 +51,7 @@ const AboutMe = () => {
                 <h1 className="text-base font-heading mb-1">AI/ML</h1>
                 <h3 className="font-mono font-bold tracking-wide text-sm">
                   <br></br>
-                  LangChain / Mistral7B LLM / Qdrant / SPECTER2
+                  LangChain / RAG / Mistral7B LLM / Qdrant / SPECTER2
                 </h3>
               </div>
             </div>
@@ -70,7 +67,8 @@ const AboutMe = () => {
                 <h1 className="text-lg">Front-end </h1>
                 <h3 className="font-mono font-bold tracking-wide text-sm mt-2">
                   <br></br>
-                  HTML / CSS / TailwindCSS / React.js / Figma / EJS
+                  HTML / CSS / TailwindCSS / TypeScript/ Angular.js (19+) /
+                  Figma / EJS
                 </h3>
               </div>
             </div>
